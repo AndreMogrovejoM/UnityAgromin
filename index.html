@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | YachasunpukllapayPer</title>
+    <title>Unity WebGL Player | web3</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -22,20 +22,20 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">YachasunpukllapayPer</div>
+        <div id="unity-build-title">web3</div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/Agromin.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Agromin.data",
-        frameworkUrl: buildUrl + "/Agromin.framework.js",
-        codeUrl: buildUrl + "/Agromin.wasm",
+        dataUrl: buildUrl + "/Agromin.data.gz",
+        frameworkUrl: buildUrl + "/Agromin.framework.js.gz",
+        codeUrl: buildUrl + "/Agromin.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "geko",
-        productName: "YachasunpukllapayPer",
-        productVersion: "Versión 1.2.0",
+        companyName: "DefaultCompany",
+        productName: "web3",
+        productVersion: "0.1",
       };
 
       var container = document.querySelector("#unity-container");
@@ -65,7 +65,6 @@
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
-      canvas.style.background = "url('" + buildUrl + "/Agromin.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
